@@ -1,0 +1,218 @@
+body {
+    font-family: Arial, sans-serif;
+    background: url('cracker1.jpg') ; /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin: 0;
+    
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 600px;
+    width: 400px;
+    border: 1px solid rgb(231, 10, 157);
+    align-items: center;
+    margin: auto;
+    margin-top: 50px;
+    background-color: rgba(30, 31, 32, 0.5);
+    box-shadow: inset -5px -5px rgba(207, 4, 89, 0.808);
+    border-radius: 25px;
+}
+
+h1 {
+    color: rgb(221, 15, 135);
+    font-size: 2rem;
+    border-bottom: 4px solid rgba(255, 255, 255, 0.5);
+    margin: 50px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #e60c72;
+    font-weight: bold; /* Make label bold */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="message"]:hover,
+textarea {
+    padding: 12px;
+    margin: 10px;
+    width: 65%;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: inset -3px -3px rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 1rem;
+    
+}
+
+
+input[type="text"]:hover,
+input[type="email"]:hover,
+
+textarea:hover {
+    border-color: #e9ec09; /* Change border color on hover */
+    box-shadow: 0 0 5px rgba(209, 231, 6, 0.993); /* Add shadow on hover */
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    border-color: #e9da0b; /* Change border color on focus */
+    box-shadow: 0 0 8px rgba(241, 238, 8, 0.884); /* Add shadow on focus */
+    outline: none; /* Remove default outline */
+}
+
+button {
+    padding: 20px 20px;
+    margin-top: 10px;
+    width: 70%;
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: inset -3px -3px rgba(0, 0, 0, 0.5);
+    color: rgb(238, 16, 164);
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: url("rocket.png") auto;
+
+}
+button:hover {
+    background-color: #e7f70a; /* Darker green on hover */
+    transform: translateY(-2px); /* Slightly lift the button on hover */
+}
+
+button:active {
+    transform: translateY(0); /* Return to original position when clicked */
+}
+
+.map-container {
+    background-image: url('cracker2.jpg');
+    margin-top: 30px;
+    text-align: center;
+}
+
+.map-container h2 {
+    margin-bottom: 15px;
+    color: #e00aa0;
+}
+.contact-info{
+
+    display: flex;
+    
+    width: 100%;
+    
+    max-width: 1500px;
+    
+    align-items: center;
+    
+    justify-content: center;
+    
+    padding: 0 20px;
+    background-image: url('cracker2.jpg');
+    
+    }
+    .card{
+
+        
+        
+        padding: 0 20px;
+        
+        margin: 0 10px;
+        
+        width: calc(33% - 20px);
+        
+        height: 200px;
+        
+        display: flex;
+        
+        flex-direction: column;
+        
+        justify-content: center;
+        
+        align-items: center;
+        
+        color: #08105a;
+        cursor: pointer;
+        }
+        .card-icon{
+
+            font-size: 28px;
+            
+            background: #e2096f;
+            
+            width: 60px;
+            
+            height: 60px;
+            
+            text-align: center;
+            
+            line-height: 60px !important;
+            
+            border-radius: 50%;
+            
+            transition: 0.3s linear;
+            
+            }
+            .card:hover .card-icon{
+
+                background: none;
+                
+                color: #e20909;
+                
+                transform: scale(1.6);
+                
+                }
+                
+                .card p{
+                
+                margin-top: 20px;
+                
+                font-weight: 300;
+                
+                letter-spacing: 2px;
+                
+                max-height: 0;
+                
+                opacity: 0;
+                
+                transition: 0.3s linear;
+                
+                }
+                
+                .card:hover p{
+                
+                max-height: 40px;
+                
+                opacity: 1;
+                }
+                @media screen and (max-width:800px) {
+
+                    .contact-info{ 
+                        flex-direction: column;
+                     }
+                    
+                    .card{
+                    
+                    width: 100%;
+                    
+                    max-width: 300px;
+                    
+                    margin: 10px 0;
+                    
+                    }
+                    
+                    }
